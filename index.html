@@ -1,0 +1,10 @@
+<html>
+<body>
+<script>
+    const sseClient = new EventSource('http://localhost:3000/api/events');
+    sseClient.onmessage = (e) => {
+        console.log("E", e, e.data)
+    }
+</script>
+</body>
+</html>
